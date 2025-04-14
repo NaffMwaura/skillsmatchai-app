@@ -1,156 +1,197 @@
 :host {
-    display: block;
-    background-color: #1e1e2f;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 2rem;
+  display: block;
+  background-color: #1e1e2f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
-  
-  .hero {
-    text-align: center;
-    padding: 4rem 2rem;
-  
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+
+  .cta-buttons {
+    margin-top: 2rem;
+
+    .btn {
+      padding: 1rem 2rem;
+      margin: 0 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
     }
-  
-    .cta-buttons {
-      margin-top: 2rem;
-  
-      .btn {
-        padding: 1rem 2rem;
-        margin: 0 1rem;
-        border-radius: 0.5rem;
-        text-decoration: none;
-        font-weight: bold;
-      }
-  
-      .primary {
+
+    .primary {
+      background-color: #4f46e5;
+      color: white;
+    }
+
+    .secondary {
+      background-color: transparent;
+      border: 2px solid #4f46e5;
+      color: #4f46e5;
+    }
+  }
+}
+
+/* 🔥 Background image with overlay */
+.how-it-works {
+  position: relative;
+  background-image: url('./istockphoto-2161111602-612x612.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  z-index: 1;
+  overflow: hidden;
+  color: white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    z-index: -1;
+  }
+
+  h2, h3, p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* for readability */
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .step {
+      background-color: rgba(42, 42, 59, 0.85); /* semi-transparent box */
+      padding: 1.5rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.features,
+.final-cta {
+  text-align: center;
+  margin: 4rem 0;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    li {
+      background-color: #2a2a3b;
+      padding: 1.5rem;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.final-cta {
+  .btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: #4f46e5;
+    color: white;
+    border-radius: 0.5rem;
+  }
+}
+
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.85rem;
+
+  .links {
+    margin-top: 1rem;
+
+    a {
+      margin: 0 1rem;
+      color: #a0a0ff;
+    }
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2a2a3b;
+  padding: 2rem;
+  border-radius: 1rem;
+  z-index: 20;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .modal-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+
+      &.primary {
         background-color: #4f46e5;
         color: white;
       }
-  
-      .secondary {
-        background-color: transparent;
+
+      &.secondary {
         border: 2px solid #4f46e5;
         color: #4f46e5;
+        background: transparent;
       }
     }
   }
-  
-  .how-it-works,
-  .features,
-  .final-cta {
-    text-align: center;
-    margin: 4rem 0;
-  
-    h2 {
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
-    }
-  
-    .steps,
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-  
-      @media (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-around;
-      }
-  
-      li,
-      .step {
-        background-color: #2a2a3b;
-        padding: 1.5rem;
-        border-radius: 1rem;
-      }
-    }
-  }
-  
-  .final-cta {
-    .btn {
-      margin-top: 1rem;
-      padding: 1rem 2rem;
-      background-color: #4f46e5;
-      color: white;
-      border-radius: 0.5rem;
-    }
-  }
-  
-  .footer {
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 0.85rem;
-  
-    .links {
-      margin-top: 1rem;
-      a {
-        margin: 0 1rem;
-        color: #a0a0ff;
-      }
-    }
-  }
-  .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 10;
-  }
-  
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #2a2a3b;
-    padding: 2rem;
-    border-radius: 1rem;
-    z-index: 20;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-    color: white;
-  
-    .close-btn {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      cursor: pointer;
-    }
-  
-    .modal-options {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 1.5rem;
-  
-      .btn {
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
-        text-decoration: none;
-        font-weight: bold;
-  
-        &.primary {
-          background-color: #4f46e5;
-          color: white;
-        }
-  
-        &.secondary {
-          border: 2px solid #4f46e5;
-          color: #4f46e5;
-          background: transparent;
-        }
-      }
-    }
-  }
-  
-  
+}
