@@ -1,0 +1,60 @@
+**** 1. Sample One
+
+📁 app/
+│
+├── 📁 landing/
+│   ├── 📄 landing.component.ts
+│   ├── 📄 landing.component.html
+│   ├── 📄 landing.component.scss
+│   └── 📄 landing.module.ts
+│
+├── 📁 jobseeker/
+│   ├── 📁 auth/
+│   │   ├── 📄 login.component.ts
+│   │   ├── 📄 login.component.html
+│   │   ├── 📄 signup.component.ts
+│   │   ├── 📄 signup.component.html
+│   │   └── 📄 auth.module.ts
+│   ├── 📁 dashboard/
+│   │   ├── 📄 dashboard.component.ts
+│   │   ├── 📄 dashboard.component.html
+│   │   └── 📄 dashboard.module.ts
+│
+├── 📁 recruiter/
+│   ├── 📁 auth/
+│   │   ├── 📄 login.component.ts
+│   │   ├── 📄 login.component.html
+│   │   ├── 📄 signup.component.ts
+│   │   ├── 📄 signup.component.html
+│   │   └── 📄 auth.module.ts
+│   ├── 📁 dashboard/
+│   │   ├── 📄 dashboard.component.ts
+│   │   ├── 📄 dashboard.component.html
+│   │   └── 📄 dashboard.module.ts
+│
+├── 📁 shared/
+│   ├── 📁 components/     # shared UI components like navbar, footer
+│   ├── 📁 services/       # auth, API services
+│   ├── 📁 guards/         # route guards
+│   └── 📄 shared.module.ts
+│
+└── 📄 app-routing.module.ts
+
+**** 2. Sample Two
+src/
+└── app/
+    ├── landing/
+    │   └── landing.component.ts
+    ├── jobseeker/
+    │   ├── auth/
+    │   │   ├── login/
+    │   │   └── signup/
+    │   └── dashboard/
+    │       └── dashboard.component.ts
+    ├── recruiter/
+    │   ├── auth/
+    │   │   ├── login/
+    │   │   └── signup/
+    │   └── dashboard/
+    │       └── dashboard.component.ts
+

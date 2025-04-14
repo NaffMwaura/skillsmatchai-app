@@ -1,0 +1,17 @@
+<div class="applications-container">
+    <h3>My Applications</h3>
+  
+    <ul *ngIf="applications.length > 0; else noApps">
+      <li *ngFor="let app of applications">
+        <span class="job-title">{{ app.jobTitle }}</span>
+        <span class="badge" [ngClass]="getStatusBadge(app.status)">
+          {{ app.status }}
+        </span>
+      </li>
+    </ul>
+  
+    <ng-template #noApps>
+      <p>No applications submitted yet.</p>
+    </ng-template>
+  </div>
+  

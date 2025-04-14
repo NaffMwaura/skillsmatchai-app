@@ -1,0 +1,48 @@
+<div class="dashboard">
+    <aside class="sidebar">
+      <h2>SkillMatch</h2>
+      <nav>
+        <a routerLink="overview" routerLinkActive="active">Overview</a>
+        <a routerLink="cv" routerLinkActive="active">CV Upload</a>
+        <a routerLink="jobs" routerLinkActive="active">Recommended Jobs</a>
+        <a routerLink="guidance" routerLinkActive="active">Career Guidance</a>
+        <a routerLink="applications" routerLinkActive="active">My Applications</a>
+      </nav>
+    </aside>
+  
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Welcome, Job Seeker</h1>
+        <button class="logout">Logout</button>
+      </header>
+  
+      <section class="widgets">
+        <div class="card">
+          <h3>CV Status</h3>
+          <p>Your CV is uploaded and analyzed.</p>
+        </div>
+  
+        <div class="card">
+          <h3>Recommended Jobs</h3>
+          <ul>
+            <li>Frontend Developer &#64; Nexa</li>
+            <li>Junior AI Analyst &#64; DataSense</li>
+            <li>UI/UX Designer &#64; Loop</li>
+          </ul>
+        </div>
+  
+        <div class="card">
+          <h3>Career Guidance</h3>
+          <p>We recommend improving your TypeScript skills and exploring AI-enhanced roles.</p>
+        </div>
+  
+        <div class="card">
+          <h3>Application Status</h3>
+          <p>3 Active Applications • 1 Interview Scheduled</p>
+        </div>
+      </section>
+      <router-outlet></router-outlet>
+
+    </main>
+  </div>
+  

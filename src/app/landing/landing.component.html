@@ -1,0 +1,65 @@
+<section class="hero">
+    <h1>Unlock Opportunities with SkillMatch</h1>
+    <p>AI-powered platform to connect top talent with top companies.</p>
+    <div class="cta-buttons">
+      <a routerLink="jobseeker/signup" class="btn primary">I'm a Job Seeker</a>
+      <a routerLink="recruiter/signup" class="btn secondary">I'm a Recruiter</a>
+    </div>
+  </section>
+  
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Sign Up</h3>
+        <p>Create a free account tailored to your role.</p>
+      </div>
+      <div class="step">
+        <h3>2. Match Smart</h3>
+        <p>AI connects your skills or job listings with the perfect fit.</p>
+      </div>
+      <div class="step">
+        <h3>3. Connect & Hire</h3>
+        <p>Schedule interviews, communicate and close the deal.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="features">
+    <h2>Why SkillMatch?</h2>
+    <ul>
+      <li>✅ Smart Career Guidance</li>
+      <li>✅ AI-based CV Analysis</li>
+      <li>✅ Automated Interview Scheduling</li>
+      <li>✅ Dashboard for Recruiters & Job Seekers</li>
+    </ul>
+  </section>
+  
+  <section class="final-cta">
+    <h2>Join SkillMatch Today</h2>
+    <p>Take the first step towards smarter hiring and career growth.</p>
+    <button class="btn primary" (click)="openModal()">Get Started</button>
+</section>
+  
+  <footer class="footer">
+    <p>© 2025 SkillMatch. All rights reserved.</p>
+    <div class="links">
+      <a routerLink="/about">About</a>
+      <a routerLink="/contact">Contact</a>
+      <a routerLink="/privacy">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" *ngIf="showModal" (click)="closeModal()"></div>
+  <div class="modal" *ngIf="showModal">
+    <button class="close-btn" (click)="closeModal()">✕</button>
+    <h2>Get Started with SkillMatch</h2>
+    <p>Select your path</p>
+    <div class="modal-options">
+      <a routerLink="jobseeker/signup" class="btn primary">Job Seeker</a>
+      <a routerLink="recruiter/signup" class="btn secondary">Recruiter</a>
+    </div>
+  </div>
+  
+  
