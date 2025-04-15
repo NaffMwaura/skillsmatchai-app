@@ -1,3 +1,64 @@
+
+.top-bar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.get-started-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.get-started-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #3730a3;
+}
+
+.plane-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #2a2a3b;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background-color: #4f46e5;
+}
+
 :host {
   display: block;
   background-color: #1e1e2f;

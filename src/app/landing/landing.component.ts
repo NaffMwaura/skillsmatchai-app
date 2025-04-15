@@ -11,6 +11,15 @@ import { RouterModule } from '@angular/router';
 })
 export class LandingComponent {
 
+  dropdownOpen = false;
+
+  toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
+  }
+
+  closeDropdown() {
+    this.dropdownOpen = false;
+  }
   showModal = false;
 
   openModal() {

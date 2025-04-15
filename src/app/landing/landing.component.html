@@ -1,3 +1,21 @@
+<div class="top-bar">
+  <div class="get-started-dropdown" (click)="toggleDropdown()">
+    <button class="get-started-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="plane-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10.5 12l8.5-4m0 0l-8.5-4m8.5 4H3m6 0v6m0 0l-2 2m2-2l2 2" />
+      </svg>
+      Get Started
+    </button>
+
+    <div class="dropdown-menu" *ngIf="dropdownOpen">
+      <a routerLink="/jobseeker/login">Job Seeker</a>
+      <a routerLink="/recruiter/login">Recruiter</a>
+    </div>
+  </div>
+</div>
+
+
 <section class="hero">
     <h1>Unlock Opportunities with SkillMatch</h1>
     <p>AI-powered platform to connect top talent with top companies.</p>
