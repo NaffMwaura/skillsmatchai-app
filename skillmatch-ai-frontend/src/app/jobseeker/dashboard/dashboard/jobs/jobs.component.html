@@ -1,0 +1,17 @@
+<div class="jobs-container">
+    <h2>Recommended Jobs</h2>
+  
+    <div class="job-card" *ngFor="let job of jobs">
+      <div class="header">
+        <h3>{{ job.title }}</h3>
+        <span class="match">{{ job.match }} Match</span>
+      </div>
+  
+      <p><strong>Company:</strong> {{ job.company }}</p>
+      <p><strong>Location:</strong> {{ job.location }}</p>
+      <p><strong>Type:</strong> {{ job.type }}</p>
+  
+      <button>Apply</button>
+    </div>
+  </div>
+  

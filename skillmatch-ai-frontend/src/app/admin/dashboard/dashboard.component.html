@@ -1,0 +1,50 @@
+<div class="admin-dashboard">
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, Admin! Here's an overview of platform metrics.</p>
+    
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h4>Total Users</h4>
+      <canvas baseChart
+        [data]="usersBarChart"
+        chartType="bar">
+      </canvas>
+    </div>
+
+    <div class="chart-card">
+      <h4>Job Postings</h4>
+      <canvas baseChart
+        [data]="jobsDoughnutChart"
+        chartType="doughnut">
+      </canvas>
+    </div>
+
+    <div class="chart-card full-width">
+      <h4>Platform Activity</h4>
+      <canvas baseChart
+        [data]="activityLineChart"
+        chartType="line">
+      </canvas>
+    </div>
+  </div>
+</div>
+  
+    <div class="stats-container">
+      <div class="stat-card">
+        <h3>Total Users</h3>
+        <p>1,205</p>
+      </div>
+      <div class="stat-card">
+        <h3>Job Postings</h3>
+        <p>325</p>
+      </div>
+      <div class="stat-card">
+        <h3>Applications</h3>
+        <p>4,780</p>
+      </div>
+      <div class="stat-card">
+        <h3>Hires</h3>
+        <p>76</p>
+      </div>
+    </div>
+  
