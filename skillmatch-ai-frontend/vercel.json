@@ -1,6 +1,7 @@
 {
   "buildCommand": "pnpm install && pnpm run build",
   "outputDirectory": "dist/skillsmatch-ai",
+  "installCommand": "pnpm install",
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
